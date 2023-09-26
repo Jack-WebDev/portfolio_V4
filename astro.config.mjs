@@ -8,7 +8,7 @@ import image from "@astrojs/image";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://jack-webdev.github.io/portfolio_V4/',
+  site: 'https://lustrous-quokka-e2c39c.netlify.app/',
   integrations: [mdx(), sitemap(), tailwind(), image(
     {
       serviceEntryPoint: '@astrojs/image/sharp',
