@@ -1,16 +1,48 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5 text-center">
+    <div class="text-5xl font-bold text-[#12395d]">Hi, I'm Jack</div>
+    <div class="py-3">
+      <text class="text-lg text-[#f0f8ff]">
+        I specialize in Design, Online Marketing and Web Development with a focus on responsiveness and accesibility
+      </text>
+    </div>
+    <div class="text-xl py-2 font-bold text-[#12395d]">Software Engineer | Freelancer</div>
+    <div class="mt-8">
+      <a class="btn rounded-lg hover:bg-transparent hover:border-[#12395d] hover:text-white" href="https://www.linkedin.com/in/katlego-mabaso-827a88222/" target="_blank"> Let's connect!</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 text-center">My recent projects {"</>"}</div>
+  </div>
+
+  <HorizontalCard
+    title="News Homepage"
+    img="/desktop-design.jpg"
+    desc="Cool landing page built using #SASS #JS"
+    url="#"
+    badge="NEW"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Coffeeroasters"
+    img="/About-us.jpg"
+    desc="This 3-page coffee website enables my users to make selections to create a coffee subscription, it's also responsive. Built using #SASS #JS"
+    url="#"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Loop Studios"
+    img="/LoopStudios.jpg"
+    desc="A cool responsive landing page built using #CSS #JS"
+    url="#"
+    badge="FOSS"
+  />
+
+</BaseLayout>

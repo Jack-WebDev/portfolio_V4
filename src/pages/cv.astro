@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="BCom Accounting"
+      subtitle="2018 to 2021 at North-West University"
+    />
+    <TimeLineElement
+      title="Systems Development"
+      subtitle="2022 to 2023 at WeThinkCode_"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Supervisor"
+      subtitle="From 2019 to 2020 at WhiteFox Ltd."
+    >
+    As a supervisor of an online delivery service, my duties included overseeing daily operations, managing delivery staff, and ensuring timely and accurate order fulfilment. I coordinated logistics, track deliveries, and address customer inquiries. I had to maintain efficiency, ensuring customer satisfaction, and optimizing the delivery process.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Freelancer"
+      subtitle="From 2022 to Present"
+    >
+    As a software developer freelancer, I'm involved in collaborating with clients to understand their requirements, designing and implementing software solutions, conducting thorough testing, and delivering high-quality, customized projects. I enjoy managing project timelines and communication while leveraging my expertise to provide efficient and tailored software solutions.
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>CSS / SASS</li>
+    <li>Tailwind CSS</li>
+    <li>Bootstrap v5</li>
+    <li>React.js</li>
+    <li>Astro.js</li>
+    <li>Vite</li>
+    <li>MongoDB / MySQL</li>
+    <li>Java</li>
+    <li>Python</li>
+    <li>Flask</li>
+    <li>Figma</li>
+  </ul>
+</BaseLayout>
